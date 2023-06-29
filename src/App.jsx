@@ -1,7 +1,14 @@
 import React from 'react'
 
 
-import Home from './pages/Home'
+//  import Home from './pages/Home'
+
+// import ProductList from './pages/ProductList'
+// import Product from './pages/Product'
+
+// import Login from './pages/Login'
+//  import Register from './pages/Register'
+import Cart from './pages/Cart'
 
 
 
@@ -9,7 +16,12 @@ import Home from './pages/Home'
 const App = () => {
   return (
     <>
-    <Home/>
+    {/* <HomePage/> */}
+    {/* <ProductList/> */}
+    {/* <Product/> */}
+    {/* <Login/> */}
+    {/* <Register/> */}
+    <Cart/>
     </>
   )
 }
