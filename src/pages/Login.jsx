@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import {mobile} from '../responsive'
 
 
 const Container=styled.div`
@@ -17,6 +18,7 @@ const Container=styled.div`
     justify-content: center;
 
 
+
 `
 const Wrapper=styled.div`
         display:flex;
@@ -24,6 +26,8 @@ const Wrapper=styled.div`
         padding:20px;
         width:25%;
         background-color: white;
+        ${mobile({width:"75%"})}
+
         
 
 `

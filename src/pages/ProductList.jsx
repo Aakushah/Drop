@@ -1,4 +1,6 @@
 import React from 'react'
+import {mobile} from '../responsive'
+
 
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
@@ -15,23 +17,31 @@ const Title=styled.h1`
 
 `;
 const FilterContainer=styled.div` display:flex;
-justify-content: space-between;
+    justify-content: space-between;
 
 `;
 const Filter=styled.div`
     margin: 20px;
+    ${mobile({margin:"0px 20px"})}
+    
 `;
 
 const FilterText=styled.span`
-    font-size:20px;
+    font-size:18px;
     font-weight: 600;
     margin-right: 20px;
+    ${mobile({margin:"0px"})}
+
+    
+
 
 `;
 
 const Select =styled.select`
     padding:10px;
     margin-right: 20px;
+    ${mobile({margin:"10px 0px"})}
+
 
 
 
@@ -46,7 +56,7 @@ const ProductList = () => {
         <Title>Dresses</Title>
         <FilterContainer>
             <Filter>
-                <FilterText>Filter products :</FilterText>
+                <FilterText>Filter products:</FilterText>
                     <Select>
                         <Option disabled selected>Color</Option>
                         <Option>White</Option>
@@ -73,7 +83,7 @@ const ProductList = () => {
             
             </Filter>
             <Filter>
-                <FilterText>Sort Products :</FilterText>
+                <FilterText>Sort Products:</FilterText>
 
                 
                 <Select>

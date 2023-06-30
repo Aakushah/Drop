@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 
 import styled from 'styled-components';
@@ -6,11 +6,18 @@ import styled from 'styled-components';
 import {categories} from '../data'
 import CategoriesItem from './CategoriesItem';
 
+import {mobile} from '../responsive'
+
+
 
 const Container=styled.div`
   display: flex;
+  
   padding: 20px;
   justify-content: space-between;
+
+  ${mobile({flexDirection:'column'})}
+
 
 `
 

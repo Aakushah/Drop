@@ -3,9 +3,16 @@ import React from 'react'
 import {Facebook,Instagram,Twitter,Pinterest,Room,Email,Phone} from '@material-ui/icons'
 
 import styled from 'styled-components'
+import {mobile} from '../responsive'
+
 
 const Container=styled.div`
     display: flex;
+
+    ${mobile({flexDirection:"column" ,wrap:"wrap"})}
+
+
+
 
 `;
 const Left=styled.div`
@@ -13,6 +20,7 @@ const Left=styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px;
+    ${mobile({justifyContent:"center",alignItems:"center"})}
 `;
 const Center=styled.div`
     flex:1;
@@ -21,7 +29,10 @@ const Center=styled.div`
 
 
 const Title=styled.h3`
+    
     margin-bottom: 30px;
+    
+    ${mobile({textAlign:"center",fontSize:"25px",textDecoration:"underline"})}
 
 
 `;
@@ -31,6 +42,9 @@ const List=styled.ul`
     list-style:none;
     display: flex;
     flex-wrap:wrap;
+
+
+    ${mobile({textAlign:"center"})}
 
 `;
 const ListItem=styled.li`
@@ -57,12 +71,16 @@ const ContactItem=styled.div`
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    /* column-gap: 10px; */
+
+
+    
+
 
 `;
 
 const Payment=styled.img`
     width: 50%;
+    ${mobile({width:"75%"})}
 
 `;
 
@@ -70,9 +88,12 @@ const Payment=styled.img`
 const Logo =styled.h1``;
 const Description =styled.p`
     margin:20px 0px;
+    ${mobile({textAlign:"center"})}
+    
 `;
 const SocialContainer =styled.div`
     display: flex;
+    column-gap:5px;
   
 
 `;
@@ -142,29 +163,29 @@ const Footer = () => {
         </Center>
         <Right>
 
-        <Title>contact</Title>
-        <ContactItem>
-        <Room style={{marginRight:'10px'}}/>
-        Azad Bhwan c vadodara,Gujarat,india.
-        
-        
-        </ContactItem>
-        <ContactItem>
-        <Phone style={{marginRight:'10px'}}/>
-        +78702 428908
-        
-        </ContactItem>
-        <ContactItem>
-        <Email style={{marginRight:'10px'}}/>
-            ashokpoudel321@gmail.com
-        
-        </ContactItem>
-        
-        
-        
+            <Title>contact</Title>
+            <ContactItem>
+            <Room style={{marginRight:'10px'}}/>
+            Azad Bhwan c vadodara,Gujarat,india.
+            
+            
+            </ContactItem>
+            <ContactItem>
+            <Phone style={{marginRight:'10px'}}/>
+            +78702 428908
+            
+            </ContactItem>
+            <ContactItem>
+            <Email style={{marginRight:'10px'}}/>
+                ashokpoudel321@gmail.com
+            
+            </ContactItem>
+            
+            
+            
 
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"  />      
-        
+            <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"  />      
+            
         </Right>
 
 
